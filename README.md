@@ -147,14 +147,7 @@ As discussed in the paper:
 
 ## Citation
 
-```bibtex
-@inproceedings{rathi2026retrieval,
-  title     = {A Comparative Evaluation of Retrieval Pipelines for Large-Scale Scientific Question Answering with Open-Weight LLMs},
-  author    = {Rathi, Bhagyesh and Chawla, Eshan and Ershov, Aleksander and Andreopoulos, William B.},
-  booktitle = {Proceedings of the IEEE AIxSET Conference},
-  year      = {2026}
-}
-```
+-
 
 ## Code and Data Availability
 
