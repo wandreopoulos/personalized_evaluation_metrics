@@ -40,7 +40,7 @@ Each indexed document is the concatenation of paper title and abstract (`"Title:
 - **Evaluation set:** a random sample of **10,000 papers from 2025**, drawn via single-pass reservoir sampling (`seed = 42`) over the streamed JSON.
 - **Synthetic queries:** for each sampled paper, `Llama-3.1-70B-Instruct` generates **two retrieval-oriented questions** — a **problem query** (the research gap/limitation) and a **method query** (the methodology/technical approach) — yielding ~**20,000 query–gold-paper pairs**. Queries are constrained to 1–2 lines, written in natural language, and prohibited from reusing the paper title verbatim. The source paper is the gold retrieval target.
 
-The released synthetic question dataset is available at the link referenced in the paper's *Code and Data Availability* section.
+The released synthetic question dataset is available on Kaggle: https://www.kaggle.com/datasets/bhagyeshrathi/scientific-question-answering-llms
 
 ## Evaluation Protocol (LLM-as-a-judge)
 
@@ -147,9 +147,16 @@ As discussed in the paper:
 
 ## Citation
 
--
+```bibtex
+@inproceedings{rathi2026retrieval,
+  title     = {A Comparative Evaluation of Retrieval Pipelines for Large-Scale Scientific Question Answering with Open-Weight LLMs},
+  author    = {Rathi, Bhagyesh and Chawla, Eshan and Ershov, Aleksander and Andreopoulos, William B.},
+  booktitle = {Proceedings of the IEEE AIxSET Conference},
+  year      = {2026}
+}
+```
 
 ## Code and Data Availability
 
 - **Code:** https://github.com/wandreopoulos/personalized_evaluation_metrics
-- **Dataset:** the synthetic scientific QA dataset link is provided in the paper's *Code and Data Availability* section.
+- **Dataset:** https://www.kaggle.com/datasets/bhagyeshrathi/scientific-question-answering-llms
